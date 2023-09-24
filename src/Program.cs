@@ -18,6 +18,7 @@ namespace merge_sort
 
         private static int [] MergeSort(int[] a, int index_a, int index_b, int depth)
         {
+            Console.WriteLine(string.Concat(Enumerable.Repeat("  ", depth* 2)) + "Processing array  = [" + string.Join(",", a[index_a..index_b])+"]");
             if (index_b - index_a < 1)
             {
                 return a[index_a..(index_b+1)];
